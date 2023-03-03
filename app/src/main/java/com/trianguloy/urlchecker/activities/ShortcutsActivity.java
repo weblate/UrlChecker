@@ -32,6 +32,17 @@ public class ShortcutsActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        if (Intent.ACTION_CREATE_SHORTCUT.equals(getIntent().getAction())) {
+            setResult(RESULT_OK, new Intent()
+                    .putExtra(Intent.EXTRA_SHORTCUT_INTENT, new Intent(this, getClass()))
+                    .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                    .putExtra(Intent.EXTRA_SHORTCUT_NAME, getString(R.string.shortcut_checkClipboard))
+                    .putExtra(Intent.EXTRA_SHORTCUT_ICON_RESOURCE, Intent.ShortcutIconResource.fromContext(this, R.drawable.ic_clipboard))
+            );
+            finish();
+            return;
+        }
+
         // set theme without action bar
         AndroidSettings.setTheme(this, true);
         getWindow().requestFeature(Window.FEATURE_NO_TITLE);
@@ -42,6 +53,7 @@ public class ShortcutsActivity extends Activity {
     @Override
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
+
         // reused activity, cancel previous dialog
         if (dialog != null) dialog.dismiss();
         waitForFocus(0);

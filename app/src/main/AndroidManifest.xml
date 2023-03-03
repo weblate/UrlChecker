@@ -72,9 +72,16 @@
         </activity>
         <activity
             android:name=".activities.ShortcutsActivity"
+            android:exported="true"
+            android:documentLaunchMode="always"
             android:excludeFromRecents="true"
             android:launchMode="singleTask"
-            android:theme="@android:style/Theme.DeviceDefault.Dialog.NoActionBar" />
+            android:theme="@android:style/Theme.DeviceDefault.Dialog.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
         <service
             android:name=".services.CustomTabs"
