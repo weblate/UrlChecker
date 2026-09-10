@@ -2,6 +2,7 @@ package com.trianguloy.urlchecker.utilities.methods;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.app.Application;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
@@ -23,8 +24,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.trianguloy.urlchecker.BuildConfig;
 import com.trianguloy.urlchecker.R;
+import com.trianguloy.urlchecker.modules.list.DebugModule;
 import com.trianguloy.urlchecker.utilities.methods.JavaUtils.Consumer;
 
 import java.io.File;
@@ -53,12 +54,21 @@ public interface AndroidUtils {
 
     /** In debug mode, throws an AssertionError, in production just logs it and continues. */
     static void assertError(String detailMessage, Throwable cause) {
+        // Regardless of settings, log the error
         Log.d("ASSERT_ERROR", detailMessage, cause);
-        if (BuildConfig.DEBUG) {
-            // in debug mode, throw exception
-            throw new AssertionError(detailMessage, cause);
+
+        try {
+            // if enabled, show toast
+            var cntx = (Application) Class.forName("android.app.ActivityThread")
+                    .getMethod("currentApplication")
+                    .invoke(null, (Object[]) null);
+            if (DebugModule.ERRORTOAST_PREF(cntx).get()) {
+                Toast.makeText(cntx, "ERROR: " + detailMessage, Toast.LENGTH_LONG).show();
+            }
+        } catch (final Throwable e) {
+            // ignore if can't show toast, but at least log it
+            Log.d("ASSERT_ERROR_TOAST", "Can't show toast", e);
         }
-        // non-debug, just discard
     }
 
     /** Sets the background color (resource id) of a view using a rounded box drawable */

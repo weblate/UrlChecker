@@ -255,7 +255,8 @@ Hay algunos enlaces cuyo único propósito es redirigirte a otro enlace. Si el e
 \nSi habilitas esta opción, se mostrarán algunos datos de depuración internos (como la uri de la intención original), útil para los desarrolladores.
 \n
 \nPuede mantener pulsado para seleccionar el texto.</string>
-    <string name="mD_ctabs">Mostrar mensajes de debug del servicio custom tabs</string>
+    <string name="mD_ctabs">Mostrar mensajes de debug del servicio custom tabs (incluso si el módulo está desactivado).</string>
+    <string name="mD_toastError">Intentar mostrar mensaje en errores internos (incluso si el módulo está desactivado).</string>
     <string name="mD_show">Cargar datos de depuración</string>
     <!-- -->
     <string name="mHist_name">Historial</string>
