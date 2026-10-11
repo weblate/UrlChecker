@@ -1,6 +1,11 @@
 package com.trianguloy.urlchecker.activities;
 
+import static android.content.pm.PackageManager.COMPONENT_ENABLED_STATE_DEFAULT;
+import static android.content.pm.PackageManager.COMPONENT_ENABLED_STATE_DISABLED;
+import static android.content.pm.PackageManager.DONT_KILL_APP;
+
 import android.app.Activity;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
@@ -12,6 +17,7 @@ import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.Switch;
 
 import com.trianguloy.urlchecker.R;
 import com.trianguloy.urlchecker.fragments.BrowserButtonsFragment;
@@ -59,6 +65,8 @@ public class SettingsActivity extends Activity {
         } else {
             findViewById(R.id.processText).setVisibility(View.GONE);
         }
+
+        configureProcessUrl();
 
         // if this was reloaded, some settings may have change, so reload previous one too
         if (AndroidSettings.wasReloaded(this)) AndroidSettings.markForReloading(this);
@@ -169,6 +177,24 @@ public class SettingsActivity extends Activity {
                 AndroidSettings.registerForReloading(resultCodeInjector, this),
                 R.string.toast_noApp,
                 this
+        );
+    }
+
+
+    /* ------------------- Process Url entry ------------------- */
+
+    private void configureProcessUrl() {
+        var processUrlSwitch = this.<Switch>findViewById(R.id.processUrl);
+        var packageManager = getPackageManager();
+        var processUrlComponent = new ComponentName(this, getPackageName() + ".processUrl");
+
+        processUrlSwitch.setChecked(packageManager.getComponentEnabledSetting(processUrlComponent) == COMPONENT_ENABLED_STATE_DEFAULT);
+
+        processUrlSwitch.setOnCheckedChangeListener((compoundButton, checked) ->
+                packageManager.setComponentEnabledSetting(
+                        processUrlComponent,
+                        checked ? COMPONENT_ENABLED_STATE_DEFAULT : COMPONENT_ENABLED_STATE_DISABLED,
+                        DONT_KILL_APP)
         );
     }
 

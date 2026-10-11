@@ -133,6 +133,13 @@
             android:text="@string/txt_animation" />
 
         <Switch
+            android:id="@+id/processUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/smallPadding"
+            android:text="@string/txt_processUrl" />
+
+        <Switch
             android:id="@+id/processText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -144,13 +144,21 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.APP_BROWSER" />
             </intent-filter>
+        </activity>
+
+        <activity-alias
+            android:name=".processUrl"
+            android:exported="true"
+            android:label="@string/lbl_processUrl"
+            android:targetActivity=".dialogs.MainDialog">
             <intent-filter>
                 <action android:name="android.intent.action.PROCESS_TEXT" />
 
                 <category android:name="android.intent.category.DEFAULT" />
                 <data android:mimeType="text/plain" />
             </intent-filter>
-        </activity>
+        </activity-alias>
+
         <activity
             android:name=".activities.MainActivity"
             android:exported="true">
