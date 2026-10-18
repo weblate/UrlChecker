@@ -65,6 +65,13 @@ Translations: %3$s."</string>
     <string name="txt_processText">Sync url with editable text (when the app is opened from \'Open in URLCheck\' or similar)</string>
     <string name="btn_tutorialSettings">Repeat tutorial</string>
     <string name="btn_backupRestore">Backup / Restore</string>
+    <string name="txt_verticalPos">Vertical position</string>
+    <string name="spin_top">Top</string>
+    <string name="spin_bottom">Bottom</string>
+    <string name="txt_horizontalPos">Horizontal position</string>
+    <string name="spin_start">Left</string><!-- for rtl locales this should say 'right' -->
+    <string name="spin_end">Right</string><!-- for rtl locales this should say 'left' -->
+    <string name="spin_center">Center</string>
     <!--
         Backup / Restore
     -->
