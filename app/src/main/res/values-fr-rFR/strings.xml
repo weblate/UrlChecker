@@ -262,8 +262,7 @@ Ceci est le didacticiel, si vous souhaitez l'ignorer vous pouvez le faire en uti
     <!-- -->
     <string name="mUnshort_name">Déraccourcisseur</string>
     <string name="mUnshort_unshort">Déraccourcir</string>
-    <string name="mUnshort_desc">Ce module déraccourcira les liens en les envoyant à %s, qui les évaluera sur leurs serveurs et enregistrera la redirection pour les requêtes futures. Évitez de transmettre des liens contenant des données privées ou sensibles.
-\nLeur API est limitée à 10 requêtes par heure pour les nouveaux contrôles. La réponse du module indiquera le nombre de requêtes que vous avez en attente.</string>
+    <string name="mUnshort_desc">Ce module déraccourcira les liens en les envoyant à %s, qui les évaluera sur leurs serveurs et enregistrera la redirection pour les requêtes futures. Évitez de transmettre des liens contenant des données privées ou sensibles. \nLeur API est limitée à 10 requêtes par heure pour les nouveaux contrôles. La réponse du module indiquera le nombre de requêtes que vous avez en attente.</string>
     <string name="mUnshort_tm">API gratuite fournie par Unshorten.me</string>
     <string name="mUnshort_checking">Vérification…</string>
     <string name="mUnshort_error">Erreur de serveur : %s</string>
@@ -315,22 +314,22 @@ Ceci est le didacticiel, si vous souhaitez l'ignorer vous pouvez le faire en uti
 \nSi vous cliquez longuement sur une partie, elle sera copiée dans le presse-papiers.
 \nVous pouvez également cliquer sur le bouton \"X\" pour en supprimer certaines.
 \nIl s\'agit d\'une version avancée du module \'Queries Remover\'.</string>
-    <string name="btn_delete">Supprimer</string>
-    <string name="bkp_description">Choisissez quels éléments doivent être sauvegardés/restaurés.
+    <string name="bck_delete">Supprimer</string>
+    <string name="bck_description">Choisissez quels éléments doivent être sauvegardés/restaurés.
 \nLors de la restauration, si la sauvegarde a été créée sans éléments, les éléments existants seront conservés.</string>
-    <string name="bkp_data">Données : Données standard de l\'application. Des choses comme les modules activés, les configurations json, etc. Ne comprendra pas les secrets ni le cache.</string>
-    <string name="bkp_data_prefs">Préférences : Données sauvegardées en tant que préférences.</string>
-    <string name="bkp_secrets">Secrets : Données considérées comme \"secrètes\", comme la clé api de VirusTotal ou le registre.</string>
+    <string name="bck_data">Données : Données standard de l\'application. Des choses comme les modules activés, les configurations json, etc. Ne comprendra pas les secrets ni le cache.</string>
+    <string name="bck_data_prefs">Préférences : Données sauvegardées en tant que préférences.</string>
+    <string name="bck_secrets">Secrets : Données considérées comme \"secrètes\", comme la clé api de VirusTotal ou le registre.</string>
     <string name="bck_ignoreNewer">Autoriser les sauvegardes créées à partir de versions plus récentes de l\'application.</string>
     <string name="bck_backupOk">Sauvegarde créée</string>
     <string name="noLinks">Aucun lien détecté</string>
     <string name="txt_animation">Activer animations</string>
-    <string name="btn_backup">Sauver</string>
-    <string name="btn_restore">Restorer</string>
+    <string name="bck_backup">Sauver</string>
+    <string name="bck_restore">Restorer</string>
     <string name="bck_restoreOk">Sauvegarde restorée</string>
     <string name="bck_mn_advanced">Monter les options avancées</string>
-    <string name="bkp_data_files">Fichiers : Données enregistrées sous forme de fichiers.</string>
-    <string name="bjp_cache">Cache : Données qui peuvent être facilement téléchargées/générées, comme la base de données des hôtes. L\'activation de cette option augmente considérablement la taille de la sauvegarde.</string>
+    <string name="bck_data_files">Fichiers : Données enregistrées sous forme de fichiers.</string>
+    <string name="bck_cache">Cache : Données qui peuvent être facilement téléchargées/générées, comme la base de données des hôtes. L\'activation de cette option augmente considérablement la taille de la sauvegarde.</string>
     <string name="bck_restoreTitle">Restorer la sauvegarde</string>
     <string name="mVT_noKey">Clé API manquante</string>
     <string name="bck_restoreMessage">ATTENTION ! Ceci remplacera les éléments sélectionnés dans la sauvegarde. \nVoulez-vous vraiment continuer ?</string>

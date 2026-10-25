@@ -67,16 +67,16 @@ Traduceri: %3$s."</string>
         Backup / Restore
     -->
     <string name="bck_mn_advanced">Afișează opțiuni avansate</string>
-    <string name="btn_backup">Copie de rezervă</string>
-    <string name="btn_restore">Restaurează</string>
-    <string name="btn_delete">Șterge</string>
-    <string name="bkp_description">"Alege ce elemente să incluzi în copia de rezervă/restaurare.
+    <string name="bck_backup">Copie de rezervă</string>
+    <string name="bck_restore">Restaurează</string>
+    <string name="bck_delete">Șterge</string>
+    <string name="bck_description">"Alege ce elemente să incluzi în copia de rezervă/restaurare.
 La restaurare, dacă copia de rezervă a fost creată fără ele, cele existente vor fi păstrate."</string>
-    <string name="bkp_data">Date: Date standard ale aplicației. Lucruri precum module activate, configurații json etc. Nu va include secrete sau memoria cache.</string>
-    <string name="bkp_data_prefs">Preferințe: Date salvate ca preferințe.</string>
-    <string name="bkp_data_files">Fișiere: Date salvate ca fișiere.</string>
-    <string name="bkp_secrets">"Secrete: Date considerate 'secrete', cum ar fi cheia API VirusTotal sau jurnalul."</string>
-    <string name="bjp_cache">Cache: Date care pot fi descărcate/generate ușor, cum ar fi baza de date hosts. Activarea acestei opțiuni poate crește notabil dimensiunea copiei de rezervă.</string>
+    <string name="bck_data">Date: Date standard ale aplicației. Lucruri precum module activate, configurații json etc. Nu va include secrete sau memoria cache.</string>
+    <string name="bck_data_prefs">Preferințe: Date salvate ca preferințe.</string>
+    <string name="bck_data_files">Fișiere: Date salvate ca fișiere.</string>
+    <string name="bck_secrets">"Secrete: Date considerate 'secrete', cum ar fi cheia API VirusTotal sau jurnalul."</string>
+    <string name="bck_cache">Cache: Date care pot fi descărcate/generate ușor, cum ar fi baza de date hosts. Activarea acestei opțiuni poate crește notabil dimensiunea copiei de rezervă.</string>
     <string name="bck_restoreDelete">Șterge elementele înainte de restaurare. Reține că preferințele și unele fișiere cu valori implicite ar putea să nu existe, deci dezactivarea acestei opțiuni va fuziona elementele existente cu cele din backup în moduri neașteptate. Dezactivează doar dacă știi ce faci.</string>
     <string name="bck_ignoreNewer">Permite copii de rezervă create din versiuni mai noi ale aplicației.</string>
     <string name="bck_newer">Anulat. Copia de rezervă a fost creată cu o versiune mai nouă a aplicației.</string>
@@ -406,8 +406,7 @@ Acest modul este învechit în favoarea modulului 'Părți URI'"</string>
     <!-- -->
     <string name="mUnshort_name">De-scurtare linkuri</string>
     <string name="mUnshort_unshort">De-scurtare</string>
-    <string name="mUnshort_desc">"Acest modul va de-scurta (expanda) linkurile trimițându-le la %s, care le evaluează pe serverele lor și salvează redirecționarea pentru cereri viitoare. Evită de-scurtarea linkurilor cu date private sau sensibile.
-API-ul lor are o limită de 10 cereri pe oră pentru verificări noi. Răspunsul modulului va afișa câte cereri mai ai în așteptare."</string>
+    <string name="mUnshort_desc">Acest modul va de-scurta (expanda) linkurile trimițându-le la %s, care le evaluează pe serverele lor și salvează redirecționarea pentru cereri viitoare. Evită de-scurtarea linkurilor cu date private sau sensibile.\nAPI-ul lor are o limită de 10 cereri pe oră pentru verificări noi. Răspunsul modulului va afișa câte cereri mai ai în așteptare.</string>
     <string name="mUnshort_tm">API gratuit unshorten.me de la Unshorten.me</string>
     <string name="mUnshort_checking">Se verifică…</string>
     <string name="mUnshort_error">Eroare server: %s</string>
@@ -454,5 +453,4 @@ Aceasta este o versiune avansată a modulului 'Eliminare interogări'."</string>
     <string name="mChg_updated">Aplicația a fost actualizată.</string>
     <string name="mChg_current">Versiunea curentă: %s</string>
     <string name="mChg_view">Vezi modificările</string>
-
 </resources>

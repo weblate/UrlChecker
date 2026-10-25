@@ -55,28 +55,37 @@ Translations: %3$s."</string>
     <string name="txt_theme">Theme:</string>
     <string name="spin_darkTheme">Dark</string>
     <string name="spin_lightTheme">Light</string>
-    <string name="txt_width">Dialog width:\nWarning! Small values may hide screen elements.</string>
+    <string name="txt_width">Dialog width (0 for automatic):\nWarning! Small values may hide screen elements.</string>
     <string name="spin_fullWidth">Full</string>
     <string name="spin_dynamicWidth">Dynamic</string>
     <string name="txt_locale">Locale:</string>
     <string name="txt_animation">Enable animations</string>
-    <string name="txt_processText">Sync url with editable text (when the app is opened by long tapping text on an input textbox)</string>
+    <string name="lbl_processUrl">Open in URLCheck</string>
+    <string name="txt_processUrl">Add an \'Open in URLCheck\' entry on text selection menu.</string>
+    <string name="txt_processText">Sync url with editable text (when the app is opened from \'Open in URLCheck\' or similar)</string>
     <string name="btn_tutorialSettings">Repeat tutorial</string>
     <string name="btn_backupRestore">Backup / Restore</string>
+    <string name="txt_verticalPos">Vertical position</string>
+    <string name="spin_top">Top</string>
+    <string name="spin_bottom">Bottom</string>
+    <string name="txt_horizontalPos">Horizontal position</string>
+    <string name="spin_start">Left</string><!-- for rtl locales this should say 'right' -->
+    <string name="spin_end">Right</string><!-- for rtl locales this should say 'left' -->
+    <string name="spin_center">Center</string>
     <!--
         Backup / Restore
     -->
     <string name="bck_mn_advanced">Show advanced options</string>
-    <string name="btn_backup">Backup</string>
-    <string name="btn_restore">Restore</string>
-    <string name="btn_delete">Delete</string>
-    <string name="bkp_description">"Choose which elements to backup/restore.
+    <string name="bck_backup">Backup</string>
+    <string name="bck_restore">Restore</string>
+    <string name="bck_delete">Delete</string>
+    <string name="bck_description">"Choose which elements to backup/restore.
 When restoring, if the backup was created without it, existing ones will be kept."</string>
-    <string name="bkp_data">Data: Standard application data. Things like enabled modules, json configurations, etc. Will not include secrets nor cache.</string>
-    <string name="bkp_data_prefs">Preferences: Data saved as preferences.</string>
-    <string name="bkp_data_files">Files: Data saved as files.</string>
-    <string name="bkp_secrets">"Secrets: Data considered 'secret', like the VirusTotal api key or the log."</string>
-    <string name="bjp_cache">Cache: Data that can be easily downloaded/generated, like the hosts database. Enabling this option may increase the backup size notably.</string>
+    <string name="bck_data">Data: Standard application data. Things like enabled modules, json configurations, etc. Will not include secrets nor cache.</string>
+    <string name="bck_data_prefs">Preferences: Data saved as preferences.</string>
+    <string name="bck_data_files">Files: Data saved as files.</string>
+    <string name="bck_secrets">"Secrets: Data considered 'secret', like the VirusTotal api key or the log."</string>
+    <string name="bck_cache">Cache: Data that can be easily downloaded/generated, like the hosts database. Enabling this option may increase the backup size notably.</string>
     <string name="bck_restoreDelete">Delete elements before restoring. Note that preferences and some files with default values may not exist, so disabling this option will merge the existing elements with the backup ones in unexpected ways. Disable if you know what you are doing.</string>
     <string name="bck_ignoreNewer">Allow backups created from newer app versions.</string>
     <string name="bck_newer">Canceled. The backup was created with a newer app version.</string>
@@ -289,6 +298,7 @@ Note: if you edit the patterns, new built-in patterns from app updates will not 
     <!-- -->
     <string name="mInput_name">Input text</string>
     <string name="mInput_desc">Displays the current URL. Press it to enter edit mode.</string>
+    <string name="mInput_monospace">Use a monospace font to help differentiate similar-looking characters.</string>
     <!-- -->
     <string name="mVT_name">URL Scanner</string>
     <string name="mVT_desc">When this module is enabled you can scan the URL using VirusTotal and check the report. A personal VirusTotal API key is needed for it to work, you can get one after registering for a free account here: %s .</string>
@@ -317,7 +327,8 @@ Note: if you edit the patterns, new built-in patterns from app updates will not 
 If you enable this it will display some internal debug data (like original intent uri), useful for developers.
 
 You can hold to select text."</string>
-    <string name="mD_ctabs">Show debug messages from the custom tabs service</string>
+    <string name="mD_ctabs">Show debug messages from the custom tabs service (even if module is disabled).</string>
+    <string name="mD_toastError">Try to show toast on recoverable internal error (even if module is disabled).</string>
     <string name="mD_show">Load debug data</string>
     <!-- -->
     <string name="mHist_name">History</string>

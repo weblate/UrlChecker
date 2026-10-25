@@ -11,8 +11,8 @@ android {
         compileSdkVersion 36
         minSdkVersion 19
         targetSdkVersion 36
-        versionCode 46
-        versionName "3.4.1"
+        versionCode 47
+        versionName "3.5"
     }
 
     buildTypes {

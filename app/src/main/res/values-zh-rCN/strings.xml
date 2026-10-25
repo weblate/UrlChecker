@@ -258,8 +258,7 @@
     <string name="mHosts_built">数据库构建: %d 主机</string>
     <string name="mUnshort_name">短链接解析器</string>
     <string name="mUnshort_unshort">解析短链接</string>
-    <string name="mUnshort_desc">此模块将通过将网址链接发送到%s 来解析短链接，它们将在其服务器上对该链接进行检查，并为将来的请求保存重定向。避免那些含有私人或敏感数据的短链接。
-\n此API的限制为每小时10个新检查的请求。该模块响应将显示还您有多少请求待处理。</string>
+    <string name="mUnshort_desc">此模块将通过将网址链接发送到%s 来解析短链接，它们将在其服务器上对该链接进行检查，并为将来的请求保存重定向。避免那些含有私人或敏感数据的短链接。 \n此API的限制为每小时10个新检查的请求。该模块响应将显示还您有多少请求待处理。</string>
     <string name="mUnshort_checking">检查中…</string>
     <string name="mUnshort_error">服务器错误: %s</string>
     <string name="mUnshort_internal">内部错误 (%s)</string>
@@ -300,13 +299,13 @@
     <string name="mChg_current">当前版本：%s</string>
     <string name="mChg_view">查看更改</string>
     <string name="mDrawer_desc">下方的所有模块都会被隐藏在抽屉中。模式仍然工作，但会在你打开抽屉前隐藏。你可以把很少用到的模块放在这里，以此避免卡顿。</string>
-    <string name="bkp_data">数据：标准应用数据。比如启用的模块、JSON 配置等等。不会包含隐私或缓存。</string>
-    <string name="btn_backup">备份</string>
+    <string name="bck_data">数据：标准应用数据。比如启用的模块、JSON 配置等等。不会包含隐私或缓存。</string>
+    <string name="bck_backup">备份</string>
     <string name="btn_backupRestore">备份或恢复</string>
     <string name="bck_mn_advanced">显示高级设置</string>
-    <string name="bkp_data_prefs">首选项：作为首选项保存的数据。</string>
-    <string name="bkp_data_files">文件：保存为文件的数据。</string>
-    <string name="bjp_cache">缓存：容易下载或生成的数据，比如主机数据库。启用此设置后，备份文件大小会明显增加。</string>
+    <string name="bck_data_prefs">首选项：作为首选项保存的数据。</string>
+    <string name="bck_data_files">文件：保存为文件的数据。</string>
+    <string name="bck_cache">缓存：容易下载或生成的数据，比如主机数据库。启用此设置后，备份文件大小会明显增加。</string>
     <string name="bck_chooseFile">选择备份文件</string>
     <string name="bck_restoreTitle">恢复备份</string>
     <string name="bck_restoreConfirm">替换元素</string>
@@ -322,13 +321,13 @@
     <string name="bck_backupError">无法创建备份，试试选择不同位置保存文件。</string>
     <string name="bck_newer">已取消。备份文件由新版本应用创建。</string>
     <string name="bck_ignoreNewer">允许使用由新版本应用创建的备份。</string>
-    <string name="bkp_description">选择要备份或恢复的元素。
+    <string name="bck_description">选择要备份或恢复的元素。
 \n如果备份文件中没有需要的元素，则会在恢复时保留原有的。</string>
-    <string name="bkp_secrets">秘密：认为是“秘密”的数据，比如 VirusTotal API 密钥或日志。</string>
+    <string name="bck_secrets">秘密：认为是“秘密”的数据，比如 VirusTotal API 密钥或日志。</string>
     <string name="bck_backupOk">已创建备份</string>
     <string name="bck_restoreOk">已恢复备份</string>
-    <string name="btn_restore">恢复</string>
-    <string name="btn_delete">删除</string>
+    <string name="bck_restore">恢复</string>
+    <string name="bck_delete">删除</string>
     <string name="bck_restoreDelete">恢复前删除元素。请注意，备份中可能缺少某些首选项或带默认值的文件，因此禁用此设置后，已有元素会与备份文件以预期外的方式合并。请在知道在做什么的情况下禁用。</string>
     <string name="mOpen_rejected">若链接被拒则隐藏应用（立即请求再次打开同一链接的应用）。不影响分享功能。</string>
     <string name="noLinks">未检测到链接</string>

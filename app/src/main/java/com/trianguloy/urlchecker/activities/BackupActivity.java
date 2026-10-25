@@ -170,12 +170,12 @@ public class BackupActivity extends Activity {
 
     /** Creates a backup and saves it to [uri] */
     private void backup(Uri uri) {
-        ProgressDialog.run(this, R.string.btn_backup, progress -> {
+        ProgressDialog.run(this, R.string.bck_backup, progress -> {
 
             progress.setMax(7);
             progress.setMessage("Initializing backup");
             try (var zip = new ZipWriter(uri, this)) {
-                zip.setComment(getString(R.string.app_name) + " (" + getPackageName() + ") " + getString(R.string.btn_backup));
+                zip.setComment(getString(R.string.app_name) + " (" + getPackageName() + ") " + getString(R.string.bck_backup));
 
                 // version
                 progress.setMessage("Adding version");
@@ -259,7 +259,7 @@ public class BackupActivity extends Activity {
 
     /** Restores a backup from [uri] */
     private void restore(Uri uri) {
-        ProgressDialog.run(this, R.string.btn_restore, progress -> {
+        ProgressDialog.run(this, R.string.bck_restore, progress -> {
             progress.setMax(5);
             progress.setMessage("Loading backup");
             try (var zip = new ZipReader(uri, this)) {
@@ -368,7 +368,7 @@ public class BackupActivity extends Activity {
     }
 
     private void delete() {
-        ProgressDialog.run(this, R.string.btn_delete, progress -> {
+        ProgressDialog.run(this, R.string.bck_delete, progress -> {
             progress.setMax(4);
             try {
 

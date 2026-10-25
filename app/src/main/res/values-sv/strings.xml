@@ -26,9 +26,9 @@
     <string name="btn_androidSettings">Android appinställningar</string>
     <string name="btn_linksSettings">Öppna länkar som stöds</string>
     <string name="txt_animation">Aktivera animeringar</string>
-    <string name="btn_backup">Säkerhetskopiering</string>
+    <string name="bck_backup">Säkerhetskopiering</string>
     <string name="btn_backupRestore">Säkerhetskopiera / Återställ</string>
-    <string name="btn_restore">Återställ</string>
+    <string name="bck_restore">Återställ</string>
     <string name="tutorial">Guide</string>
     <string name="btn_tutorialSkip">Hoppa över guiden</string>
     <string name="back">Tillbaka</string>
@@ -65,7 +65,7 @@
     <string name="locale">Svenska</string>
     <string name="btn_configureBrowser">Standardwebbläsare</string>
     <string name="txt_theme">Tema:</string>
-    <string name="btn_delete">Radera</string>
+    <string name="bck_delete">Radera</string>
     <string name="a_automations">Automatiseringar</string>
     <string name="txt_tutorial1">Tack för att du laddade ner appen!\n\nDetta är guiden, om du vill hoppa över den, så kan du göra det via nedanstående knapp. Du kan alltid komma tillbaka till denna guide via inställningsmenyn.</string>
     <string name="mOpen_with">Öppna med %s</string>

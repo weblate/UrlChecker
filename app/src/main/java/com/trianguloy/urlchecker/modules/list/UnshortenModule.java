@@ -1,6 +1,7 @@
 package com.trianguloy.urlchecker.modules.list;
 
 import static com.trianguloy.urlchecker.utilities.methods.AndroidUtils.MARKER;
+import static com.trianguloy.urlchecker.utilities.methods.AndroidUtils.getStringWithPlaceholder;
 
 import android.content.Context;
 import android.text.method.LinkMovementMethod;
@@ -82,6 +83,9 @@ class UnshortenConfig extends AModuleConfig {
 
     @Override
     public void onInitialize(View views) {
+        // textview label
+        views.<TextView>findViewById(R.id.label).setText(getStringWithPlaceholder(getActivity(), R.string.mUnshort_desc, R.string.unshorten_url));
+
         // set and configure input
         token.attachToEditText(views.findViewById(R.id.token));
     }

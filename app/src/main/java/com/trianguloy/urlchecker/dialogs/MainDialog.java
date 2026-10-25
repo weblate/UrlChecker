@@ -26,6 +26,7 @@ import com.trianguloy.urlchecker.modules.AModuleData;
 import com.trianguloy.urlchecker.modules.AModuleDialog;
 import com.trianguloy.urlchecker.modules.AutomationRules;
 import com.trianguloy.urlchecker.modules.ModuleManager;
+import com.trianguloy.urlchecker.modules.companions.GravityPref;
 import com.trianguloy.urlchecker.modules.companions.VersionManager;
 import com.trianguloy.urlchecker.modules.list.DrawerModule;
 import com.trianguloy.urlchecker.url.UrlData;
@@ -229,6 +230,12 @@ public class MainDialog extends Activity {
 
         // set width
         AndroidUtils.setActivityWidth(WIDTH_PREF(this).get(), this);
+
+        // set gravity
+        AndroidUtils.setActivityGravity(
+                GravityPref.VERTICAL_PREF(this).get().getConstant()
+                        | GravityPref.HORIZONTAL_PREF(this).get().getConstant()
+                , this);
 
         // load helpers
         automationRules = new AutomationRules(this);

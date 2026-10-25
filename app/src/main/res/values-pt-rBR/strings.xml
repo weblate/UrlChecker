@@ -213,8 +213,7 @@
     <string name="mHosts_build">Construir</string>
     <string name="mHosts_noLabel">sem rótulo</string>
     <string name="mHosts_built">Catálogo construido: %d hosts</string>
-    <string name="mUnshort_desc">Este módulo desencurta links enviando-os para %s, que os avalia em seus servidores e salva o redirecionamento para futuras petições. Evite desencurtar links com dados privados ou confidenciais.
-\nA API é limitada a 10 solicitações por hora para novas verificações. A resposta do módulo mostrará quantas petições você tem pendentes.</string>
+    <string name="mUnshort_desc">Este módulo desencurta links enviando-os para %s, que os avalia em seus servidores e salva o redirecionamento para futuras petições. Evite desencurtar links com dados privados ou confidenciais. \nA API é limitada a 10 solicitações por hora para novas verificações. A resposta do módulo mostrará quantas petições você tem pendentes.</string>
     <string name="mOpen_desc">Contém os seguintes botões (da esquerda para a direita):
 \n- Abas customizadas: Alterne para ativar/desativar as abas customizadas. Quando ativado, o navegador deve abrir em um modo \'lite\'.
 \n- Modo anônimo: Apenas para Firefox. Se ativado, o navegador deve abrir no modo anônimo.
@@ -246,21 +245,21 @@
     <string name="dismiss">Descartar</string>
     <string name="btn_backupRestore">Backup / Restaurar</string>
     <string name="bck_mn_advanced">Mostrar opções avançadas</string>
-    <string name="btn_backup">Backup</string>
-    <string name="btn_restore">Restaurar</string>
-    <string name="btn_delete">Deletar</string>
-    <string name="bkp_description">Escolha quais elementos fazer backup/restaurar.\nAo restaurar, se o backup foi criado sem ele, os existentes serão mantidos.</string>
+    <string name="bck_backup">Backup</string>
+    <string name="bck_restore">Restaurar</string>
+    <string name="bck_delete">Deletar</string>
+    <string name="bck_description">Escolha quais elementos fazer backup/restaurar.\nAo restaurar, se o backup foi criado sem ele, os existentes serão mantidos.</string>
     <string name="txt_animation">Ativar animações</string>
     <string name="bck_newer">Cancelado. O backup foi criado com uma versão mais recente do aplicativo.</string>
     <string name="bck_restoreTitle">Restaurar backup</string>
     <string name="bck_restoreConfirm">Substituir elementos</string>
     <string name="a_automations">Automações</string>
     <string name="auto_desc">Com as automações, você pode executar ações de módulo com base em gatilhos. Você pode configurar as automações aqui ou desabilitar todas elas juntas usando o toggle abaixo.</string>
-    <string name="bkp_data_prefs">Preferências: Dados salvos como preferências.</string>
-    <string name="bkp_data">Dados: Dados de aplicativo padrão. Coisas como módulos habilitados, configurações json, etc. Não incluirá segredos nem cache.</string>
-    <string name="bkp_data_files">Arquivos: Dados salvos como arquivos.</string>
-    <string name="bkp_secrets">Segredos: Dados considerados \'secretos\', como a chave da API do VirusTotal ou o log.</string>
-    <string name="bjp_cache">Cache: Dados que podem ser facilmente baixados/gerados, como o banco de dados de hosts. Habilitar esta opção pode aumentar o tamanho do backup consideravelmente.</string>
+    <string name="bck_data_prefs">Preferências: Dados salvos como preferências.</string>
+    <string name="bck_data">Dados: Dados de aplicativo padrão. Coisas como módulos habilitados, configurações json, etc. Não incluirá segredos nem cache.</string>
+    <string name="bck_data_files">Arquivos: Dados salvos como arquivos.</string>
+    <string name="bck_secrets">Segredos: Dados considerados \'secretos\', como a chave da API do VirusTotal ou o log.</string>
+    <string name="bck_cache">Cache: Dados que podem ser facilmente baixados/gerados, como o banco de dados de hosts. Habilitar esta opção pode aumentar o tamanho do backup consideravelmente.</string>
     <string name="bck_restoreDelete">Exclua elementos antes de restaurar. Observe que as preferências e alguns arquivos com valores padrão podem não existir, então desabilitar esta opção mesclará os elementos existentes com os de backup de maneiras inesperadas. Desabilite se você sabe o que está fazendo.</string>
     <string name="bck_deleteTitle">Excluir elementos</string>
     <string name="bck_deleteMessage">AVISO! Isso excluirá todos os elementos selecionados.\nVocê realmente quer continuar?</string>
@@ -281,4 +280,17 @@
     <string name="auto_enabled">Habilitar recurso de automações</string>
     <string name="auto_error_toast">Mostrar toast se a automação falhar</string>
     <string name="auto_notFound">Nenhuma automação com a chave \'%s\' está disponível. Certifique-se de que ela seja válida e que o módulo necessário esteja ativo.</string>
+    <string name="txt_width">Largura da caixa de diálogo:\nAviso! Valores pequenos podem ocultar elementos da tela.</string>
+    <string name="spin_fullWidth">Completo</string>
+    <string name="spin_dynamicWidth">Dinâmico</string>
+    <string name="txt_processText">Sincronizar URL com texto editável (quando o aplicativo é aberto ao tocar longamente no texto em uma caixa de texto de entrada)</string>
+    <string name="format">Formatar</string>
+    <string name="discard">Descartar</string>
+    <string name="json_info">Mostrar informações</string>
+    <string name="json_ignore">O conteúdo não é Json válido. Deseja descartá-lo e fechar o editor?</string>
+    <string name="json_discard_close">Descartar e fechar</string>
+    <string name="json_save">Existem alterações não salvas. Deseja salvá-las ou descartá-las?</string>
+    <string name="json_save_error">Não foi possível salvar: %s</string>
+    <string name="json_format_error">O conteúdo não é um Json válido e não pode ser analisado.</string>
+    <string name="json_discard">Atenção: esta ação substituirá o conteúdo do editor pelo Json salvo. Todas as alterações feitas serão perdidas. Deseja continuar?</string>
 </resources>
